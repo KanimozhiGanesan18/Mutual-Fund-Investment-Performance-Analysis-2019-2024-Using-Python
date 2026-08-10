@@ -4,22 +4,17 @@
 
 🎯 Project Objective
 
-1.Maintain and analyze mutual fund information including schemes, folios, fund mobilization, repurchase/redemption, net inflow/outflow, net AUM, average net AUM, and segregated portfolios in a structured dataset.
+1.Maintain all mutual fund information (schemes, categories, scheme types, investors, fund mobilization, redemptions, and AUM) in one structured dataset.
 
-2.Monitor mutual fund performance and financial trends across different scheme types, scheme categories, and reporting periods.
+2.Monitor total fund mobilization, redemption, net inflow/outflow, and AUM over time.
 
-3.Evaluate fund mobilization, redemption activity, net inflow/outflow, and AUM to understand mutual fund performance.
+3.Evaluate mutual fund performance by scheme category, scheme type, and reporting period.
 
-4.Compare different scheme types and categories to identify performance patterns and important trends.
+4.Analyze investor participation using the number of folios across different mutual fund categories.
 
-5.Analyze relationships between schemes, folios, fund flows, and assets under management.
+5.Identify investment trends and patterns to understand which mutual fund categories attract the most investments.
 
-6.Identify unusual patterns, inconsistencies, missing values, and potential data-quality issues.
-
-7.Create meaningful visualizations and reports to communicate key findings clearly.
-
-8.Generate actionable insights and recommendations to support data-driven decision-making in the mutual fund sector.
-
+6.Compare fund mobilization and redemption to identify categories with positive and negative net inflows.
 
 
 
