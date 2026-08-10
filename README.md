@@ -42,27 +42,49 @@ Google Colab / Jupyter Notebook
 
 
 Problem Definition
+
         ↓
+
 Dataset Selection
+
         ↓
+
 Business Understanding
+
         ↓
+
 Initial EDA
+
         ↓
+
 Data Cleaning
+
         ↓
+
 Data Validation
+
         ↓
+
 Exploratory Analysis
+
         ↓
+
 Visualization
+
         ↓
+
 Trend & Relationship Analysis
+
         ↓
+
 Problem Solving
+       
         ↓
+
 Insights & Recommendations
+
         ↓
+
 Final Report
 
 
