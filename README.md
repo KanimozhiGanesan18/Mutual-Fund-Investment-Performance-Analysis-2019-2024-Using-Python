@@ -26,9 +26,14 @@ Generate actionable insights and recommendations to support data-driven decision
 🛠️ Tools & Technologies
 
 Python
+
 Pandas
+
 NumPy
+
 Matplotlib
+
 Seaborn
+
 Google Colab / Jupyter Notebook
-GitHub
+
