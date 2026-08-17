@@ -1,6 +1,6 @@
 📌 Project Title
 
-**Mutual Fund Investment & Performance Analysis**
+**Mutual Fund Investment & Performance Analysis Using Python**
 
 🎯 Project Objective
 
