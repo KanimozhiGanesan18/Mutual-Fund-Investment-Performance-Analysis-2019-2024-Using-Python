@@ -740,17 +740,14 @@ Mutual-Fund-Investment-Performance-Analysis/
 
 ### 1. Clone the Repository
 
-```bash
+[```bash
 git clone https://github.com/KanimozhiGanesan18/Mutual-Funds-Report-.git
-```
+```](https://github.com/KanimozhiGanesan18/Mutual_Funds_Report-)
 
 ### 2. Open the Notebook
 
-Open:
-
-```text
-Main_Project_Mutual Fund Investment & Performance Analysis.ipynb
-```
+[Main_Project_Mutual Fund Investment & Performance Analysis.ipynb
+](https://drive.google.com/drive/folders/1upYOSiedc5vPhXYsE2Bj6KP4AwoOc8Zn?usp=drive_link) ```
 
 using **Google Colab** or **Jupyter Notebook**.
 
