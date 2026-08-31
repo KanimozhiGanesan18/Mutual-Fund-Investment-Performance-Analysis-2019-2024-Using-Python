@@ -4,8 +4,10 @@
 
 ---
 
-🚀 Mutual Fund Dataset • 2019–2024 • End‑to‑End Analytics
+# 🚀 Mutual Fund Dataset • 2019–2024 • End‑to‑End Analytics
+
 🔎 Descriptive → Diagnostic → Predictive → Prescriptive  
+
 💡 Turning raw AMFI mutual fund data into actionable investment insights
 
 ---
