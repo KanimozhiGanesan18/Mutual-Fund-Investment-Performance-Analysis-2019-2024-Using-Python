@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
 This project analyzes **AMFI mutual fund data from 2019 to 2024** using Python to understand mutual fund investment and performance patterns.
 
@@ -24,7 +24,7 @@ The project combines **Data Cleaning, Exploratory Data Analysis (EDA), Feature E
 
 ---
 
-## 🎯 Objectives
+# 🎯 Objectives
 
 The main objective of this project is to analyze AMFI mutual fund data using Python and identify useful patterns in mutual fund investment and investor participation.
 
@@ -181,7 +181,7 @@ Business Insights
 ---
 
 
-## 🧹 Data Pre-Processing
+# 🧹 Data Pre-Processing
 
 The dataset was systematically inspected and cleaned before performing statistical and visual analysis.
 
@@ -266,11 +266,11 @@ The temporary validation column was removed after verification.
 
 Feature engineering was applied to derive new, meaningful variables from the raw dataset. These features help classify fund flows, investment activity, and enable year‑wise analysis.
 
-# 1. Net Flow Status
+## 1. Net Flow Status
 Purpose:  
 Classify whether a scheme’s net inflow/outflow is positive, negative, or neutral.
 
-# Result:
+### Result:
 
 Positive → 1,633 records
 
@@ -278,11 +278,11 @@ Negative → 1,157 records
 
 No Flow → 325 records
 
-# 2. Investment Status
+## 2. Investment Status
 Purpose:  
 Compare fund mobilization vs redemption to identify investment behavior.
 
-# Result:
+### Result:
 
 More Mobilization → 1,633 records
 
@@ -449,7 +449,7 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 
 ## Univariate Analysis
 
-### 1. Distribution of Scheme Categories
+## 1. Distribution of Scheme Categories
 
 **Chart Title:**
 `Count of Records by Scheme Category`
@@ -477,7 +477,7 @@ Solution Oriented schemes are underutilized and need targeted promotion.
 
 ---
 
-### 2. Distribution of Net AUM
+## 2. Distribution of Net AUM
 
 **Chart Title:**
 `Distribution of Net AUM`
@@ -485,19 +485,19 @@ Solution Oriented schemes are underutilized and need targeted promotion.
 <img width="982" height="606" alt="Screenshot 2026-08-31 183827" src="https://github.com/user-attachments/assets/add79b3d-39ff-46bc-859f-f8966cbda8c7" />
 
 
-### Insights:
+### Interpretation:
 
-* The histogram shows how Net AUM is distributed across schemes.
+Most schemes cluster at low Net AUM (0–50K).
 
-* Most records cluster at low Net AUM values (0–50,000).
+A few schemes extend into very high ranges (~777K), creating a long right tail.
 
-* A few schemes extend into the very high range (up to ~777,000), creating a long right tail.
+### Business Insights:
 
-* The majority of schemes manage relatively small assets, while only a handful dominate with very large AUM.
+Asset concentration is unequal — a handful of large schemes dominate.
 
-* The distribution is heavily right‑skewed. Small schemes are common, but large schemes disproportionately influence overall averages.
+Smaller schemes are common but contribute less to overall AUM.
 
-* Asset concentration is unequal — a few big schemes hold most of the assets, while the rest remain small. This highlights the need for category‑level analysis to see which groups dominate the high‑AUM tail.
+Strategic focus should be on scaling mid‑tier schemes to reduce dependency on a few giants.
 
 ---
 
@@ -510,23 +510,29 @@ Solution Oriented schemes are underutilized and need targeted promotion.
 
 <img width="1111" height="607" alt="Screenshot 2026-08-31 184102" src="https://github.com/user-attachments/assets/6464d6fc-e8a0-485e-82c5-cfc359cf4afa" />
 
+### Interpretation:
 
-### Insights:
-* The chart compares average Net AUM across scheme categories.
+Equity schemes lead (~180K).
 
-* Growth/Equity Schemes → Highest average Net AUM (~180,000).
+Other schemes show late surge (~162K).
 
-* Other Schemes → ~162,000, showing strong late growth.
+Hybrid schemes steady (~126K).
 
-* Hybrid Schemes → ~126,000, steady performance.
+Debt schemes plateau (~60–70K).
 
-* Income/Debt Schemes → ~60,000–70,000, relatively stable.
+Solution Oriented lowest (~23K).
 
-* Solution Oriented Schemes → Lowest (~30,000–40,000), marginal role.
+### Business Insights:
 
-* Equity schemes dominate asset size, Hybrid schemes balance growth, Debt schemes plateau, Other Schemes surge post‑2021, and Solution Oriented remain weakest.
+Equity remains the growth engine.
 
- * Investor preference leans toward equity and hybrid categories, while debt schemes provide stability and solution‑oriented schemes remain underutilized.
+Other schemes present new opportunities post‑2021.
+
+Hybrids are reliable diversification products.
+
+Debt schemes are stable but less appealing for long‑term growth.
+
+Solution Oriented schemes need redesign or niche targeting.
 
 ---
 
@@ -538,24 +544,15 @@ Solution Oriented schemes are underutilized and need targeted promotion.
 <img width="1108" height="606" alt="Screenshot 2026-08-31 184417" src="https://github.com/user-attachments/assets/7a1e9d72-c428-4d51-a830-dd1d2aa256a2" />
 
 
-### Insights:
-* The line chart shows investor participation trends from 2019 to 2024
+### Interpretation:
 
-* 2019 → ~1.8 million average folios.
+Folios rose steadily from ~1.8M (2019) to ~3.6M (2024).
 
-* 2020 → ~2.1 million.
+### Business Insights:
 
-* 2021 → ~2.5 million.
+Investor participation nearly doubled, showing rising confidence.
 
-* 2022 → ~2.9 million.
-
-* 2023 → ~3.2 million.
-
-* 2024 → ~3.6 million.
-
-* Folios increase steadily every year, nearly doubling over the six‑year period.
-
-* Investor participation in mutual funds shows consistent growth, reflecting rising confidence and adoption across the reporting years.
+Digital onboarding and awareness campaigns should continue to sustain growth.
 
 ---
 
@@ -567,23 +564,17 @@ Solution Oriented schemes are underutilized and need targeted promotion.
 <img width="991" height="612" alt="Screenshot 2026-08-31 184630" src="https://github.com/user-attachments/assets/2805a43d-cd5d-430b-beef-9e1f4379ea48" />
 
 
-### Insight 
+### Interpretation:
 
-* The scatterplot shows how Net AUM relates to the number of folios, with points colored by net flow status.
+Positive correlation: more folios → higher Net AUM.
 
-* General trend: higher folios → higher Net AUM.
+Some schemes achieve large AUM with fewer folios (institutional investors).
 
-* Clusters:
+### Business Insights:
 
-* Many schemes around 0.5–1 million folios with Net AUM ~30,000–50,000.
+Retail participation drives overall growth.
 
-* Some schemes with few folios (<200,000) still reach Net AUM >200,000, showing large-ticket investors.
-
-* Net flow status: Positive flows dominate in higher folio ranges, while negative flows appear scattered across lower folio counts.
-
-* Strong positive correlation overall, but dispersion exists — not all schemes with high folios have equally high AUM.
-
-* Investor participation generally drives asset growth, but institutional or high-value investors can skew results, allowing some schemes to achieve large AUM with fewer folios.
+Institutional investors can skew results — schemes should balance both segments.
 
 ---
 
@@ -597,18 +588,17 @@ Solution Oriented schemes are underutilized and need targeted promotion.
 <img width="1109" height="606" alt="Screenshot 2026-08-31 185147" src="https://github.com/user-attachments/assets/863f506b-687c-4a43-9ce3-e87e6b2107dd" />
 
 
-### Insights:
-* The bar chart compares average fund mobilization across scheme types from 2019–2024.
+### Interpretation:
 
-* Open Ended Schemes → Consistently highest mobilization, peaking around 2019 (~ 20,000), dipping mid‑period, and rising again by 2024 (~ 18,000).
+Open Ended schemes dominate mobilization every year (~20K peak in 2019).
 
-* Close Ended Schemes → Very low mobilization, generally <1,000.
+Close Ended and Interval schemes negligible.
 
-* Interval Schemes → Negligible values, close to zero across all years.
+### Business Insights:
 
-* Open Ended schemes dominate every year, showing flexibility and liquidity appeal. Close Ended and Interval schemes remain flat and insignificant.
+Open Ended schemes are the backbone of investment activity.
 
-* Investment activity is driven almost entirely by Open Ended schemes, with 2019’s spike likely reflecting favorable market or regulatory conditions. Other scheme types play only a minor role.
+Close Ended and Interval schemes need innovation or repositioning.
   
 ---
 
@@ -619,22 +609,25 @@ Solution Oriented schemes are underutilized and need targeted promotion.
 
 <img width="1205" height="608" alt="Screenshot 2026-08-31 185424" src="https://github.com/user-attachments/assets/e3d3f4d6-46a7-4335-a1b7-61e8bbbfa94b" />
 
-### Insights:
-The heatmap shows average Net AUM across scheme categories from 2019–2024, highlighting consistency and growth.
+### Interpretation:
 
-* Growth/Equity Schemes rise from ~58k in 2019 to ~180k in 2024.
+Equity schemes grew from ~58K (2019) to ~180K (2024).
 
-* Hybrid Schemes grow steadily to ~126k.
+Hybrids rose steadily to ~126K.
 
-* Income/Debt Schemes stay stable around ~60–70k.
+Debt schemes stable (~60–70K).
 
-* Other Schemes surge post-2021, reaching ~162k.
+Other schemes surged post‑2021 (~162K).
 
-* Solution Oriented Schemes remain weakest, though gradually improving.
+Solution Oriented remained weak (~23K).
 
-* Equity and Hybrid categories consistently attract higher AUM, Debt plateaus, and Other Schemes show late momentum. Overall growth is visible across most categories, especially after 2020.
+### Business Insights:
 
-* Equity drives expansion, Hybrids balance growth, Debt remains steady but less appealing, Other Schemes diversify investor choices, and Solution Oriented stay marginal.
+Equity and Hybrid categories consistently attract investors.
+
+Debt schemes provide stability but limited growth.
+
+Other schemes diversify portfolios and should be promoted further.
 
 ---
 
@@ -653,25 +646,29 @@ The analysis compares normalized averages of:
 * Net Inflow/Outflow
 * Number of Folios
 
-### Insights:
-* The chart compares normalized averages of fund mobilization, redemption, net inflows/outflows, and folios across scheme categories.
+### Interpretation:
 
-* Income/Debt Schemes → Highest Fund Mobilized (~ 1.0) and Repurchase/Redemption (~0.95).
-👉 Heavy liquidity cycles with large inflows and outflows.
+Debt schemes → highest mobilization & redemption.
 
-Growth/Equity Schemes → Highest Number of Folios (~ 1.0).
-👉 Broad investor participation and retail adoption.
+Equity schemes → highest folios.
 
-Other Schemes → Highest Net Inflow/Outflow (~ 0.85).
-👉 Strong positive fund flows, especially post‑2021.
+Other schemes → strongest net inflows post‑2021.
 
-Hybrid Schemes → Moderate across all metrics (~ 0.5–0.6).
-👉 Balanced role in both investor participation and fund activity.
+Hybrids → balanced across all metrics.
 
-Solution Oriented Schemes → Lowest across all metrics (< 0.2).
-👉 Minimal impact on overall investment activity.
-  
-Debt schemes dominate liquidity, equity schemes lead in participation, other schemes show strong inflows, hybrid schemes balance both, and solution‑oriented schemes remain marginal.
+Solution Oriented → lowest impact.
+
+### Business Insights:
+
+Debt schemes drive liquidity cycles.
+
+Equity schemes dominate retail adoption.
+
+Other schemes show momentum and should be leveraged.
+
+Hybrids provide balance and risk mitigation.
+
+Solution Oriented schemes require strategic repositioning.
 
 ---
 
