@@ -324,17 +324,18 @@ repurchase_redemption
 | `fund_mobilized`        | 20,263.59 |  1,022.55 |
 | `repurchase_redemption` | 19,790.22 |    880.05 |
 
-### Interpretation
+### Visual
+
+<img width="719" height="739" alt="Screenshot 2026-08-31 175759" src="https://github.com/user-attachments/assets/38ae0558-ae15-4ae3-82ed-b4c908348d10" />
+
+
+### Insights
 
 Most numerical variables show a considerable difference between their mean and median. This indicates that the dataset contains extreme high-value observations.
 
 The distributions are generally right-skewed, meaning most observations are concentrated at lower values while a smaller number of observations have very high values.
 
 Therefore, the **median can sometimes provide a more representative view of a typical observation than the mean**.
-
-### Visualization
-
-**Chart:** Distribution of numerical variables with Mean, Median and Mode
 
 ---
 
@@ -353,7 +354,11 @@ Variance and standard deviation were used to understand the spread and variabili
 | `repurchase_redemption` | ~1.18 × 10¹⁰ |
 | `net_inflow_outflow`    |   8.33 × 10⁷ |
 
-### Key Insights
+### Visual
+
+<img width="751" height="751" alt="Screenshot 2026-08-31 180433" src="https://github.com/user-attachments/assets/ef0c7341-6128-4edd-913d-40cae92dd883" />
+
+### Insights
 
 * `no_of_folios` has the highest variance, showing very uneven investor participation.
 * `net_aum` and `avg_net_aum` show considerable variation.
@@ -371,18 +376,18 @@ The standard deviation results show:
 * `repurchase_redemption` → approximately **108,423**
 * `net_inflow_outflow` → approximately **9,126**
 
-### Interpretation
+### Visual
+
+<img width="752" height="556" alt="Screenshot 2026-08-31 181710" src="https://github.com/user-attachments/assets/23c126d1-88a2-4505-88b9-6dd8e4d04b7e" />
+
+
+### Insights
 
 The number of folios has the largest absolute spread, indicating major differences in investor participation across records.
 
 Fund mobilization and redemption have similar standard deviations, showing that their fluctuations occur at comparable magnitudes.
 
 Net inflow/outflow has a much smaller standard deviation because inflows and outflows can offset one another.
-
-### Visualizations
-
-* **Box Plot of Numerical Variables – Variance Insight**
-* **Deviation from Mean – Numerical Variables**
 
 ---
 
@@ -401,16 +406,17 @@ Skewness was analyzed to understand whether the numerical variables are balanced
 | `fund_mobilized`        |    11.40 |
 | `repurchase_redemption` |    11.29 |
 
-### Interpretation
+### Visual
+
+<img width="612" height="710" alt="Screenshot 2026-08-31 182608" src="https://github.com/user-attachments/assets/bed349ec-637b-47d1-8e1d-b968253d8542" />
+
+
+### Insights
 
 * `net_aum` and `avg_net_aum` are positively skewed because a few schemes have very large AUM.
 * `no_of_folios` is positively skewed because some schemes have exceptionally high investor participation.
 * `fund_mobilized` and `repurchase_redemption` are extremely positively skewed due to a small number of very large transactions.
 * `net_inflow_outflow` has strong negative skewness because extreme negative outflows extend the distribution toward the left.
-
-### Visualization
-
-**Chart:** Distribution of Numerical Variables with Skewness
 
 ---
 
@@ -429,16 +435,17 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 | `fund_mobilized`        |   175.82 |
 | `repurchase_redemption` |   172.09 |
 
-### Interpretation
+### Visual
+
+<img width="691" height="724" alt="Screenshot 2026-08-31 183158" src="https://github.com/user-attachments/assets/305f743f-da48-4440-bc04-13ad4b9e1171" />
+
+
+### Insights
 
 * `net_aum` and `avg_net_aum` have high kurtosis, indicating heavy tails.
 * `net_inflow_outflow` has extremely high kurtosis, showing that most observations are concentrated around zero while a few extreme observations exist.
 * `fund_mobilized` and `repurchase_redemption` have very high kurtosis because occasional large transactions create extreme values.
 * `no_of_folios` has comparatively moderate kurtosis.
-
-### Visualization
-
-**Chart:** Density of Numerical Variables with Kurtosis
 
 ---
 
@@ -451,13 +458,25 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 **Chart Title:**
 `Count of Records by Scheme Category`
 
-### Insight
+<img width="987" height="486" alt="Screenshot 2026-08-31 183440" src="https://github.com/user-attachments/assets/311785d4-959d-42ad-98ba-6726577144ef" />
 
-Income/Debt Oriented Schemes dominate the dataset, followed by Growth/Equity Oriented Schemes.
 
-Solution Oriented Schemes have comparatively fewer observations.
+### Insights:
+* The chart shows the distribution of records across scheme categories.
 
-This distribution should be considered when interpreting category-level results because smaller categories have less representation.
+* Income/Debt Schemes → ~1,400 records, the largest share.
+
+* Growth/Equity Schemes → ~900 records, second highest.
+
+* Other Schemes → ~500 records.
+
+* Hybrid Schemes → ~400 records.
+
+* Solution Oriented Schemes → ~150 records, the smallest group.
+
+* Debt schemes dominate in count, equity schemes follow strongly, while smaller categories (Hybrid, Other, Solution Oriented) are underrepresented.
+  
+* The dataset is skewed toward debt and equity schemes, meaning insights will be most reliable for these categories, while smaller groups may provide limited conclusions.
 
 ---
 
@@ -466,13 +485,22 @@ This distribution should be considered when interpreting category-level results 
 **Chart Title:**
 `Distribution of Net AUM`
 
-### Insight
+<img width="982" height="606" alt="Screenshot 2026-08-31 183827" src="https://github.com/user-attachments/assets/add79b3d-39ff-46bc-859f-f8966cbda8c7" />
 
-Net AUM is strongly right-skewed.
 
-Most records have relatively smaller AUM values, while a smaller number of schemes have very high AUM.
+### Insight:
 
-This indicates significant variation in asset distribution across mutual fund schemes.
+* The histogram shows how Net AUM is distributed across schemes.
+
+* Most records cluster at low Net AUM values (0–50,000).
+
+* A few schemes extend into the very high range (up to ~777,000), creating a long right tail.
+
+* The majority of schemes manage relatively small assets, while only a handful dominate with very large AUM.
+
+* The distribution is heavily right‑skewed. Small schemes are common, but large schemes disproportionately influence overall averages.
+
+* Asset concentration is unequal — a few big schemes hold most of the assets, while the rest remain small. This highlights the need for category‑level analysis to see which groups dominate the high‑AUM tail.
 
 ---
 
@@ -483,13 +511,25 @@ This indicates significant variation in asset distribution across mutual fund sc
 **Chart Title:**
 `Average Net AUM by Scheme Category`
 
-### Insight
+<img width="1111" height="607" alt="Screenshot 2026-08-31 184102" src="https://github.com/user-attachments/assets/6464d6fc-e8a0-485e-82c5-cfc359cf4afa" />
 
-Growth/Equity Oriented Schemes have the highest average Net AUM.
 
-Income/Debt Oriented Schemes are highly represented but have comparatively moderate average AUM.
+### Insight:
+* The chart compares average Net AUM across scheme categories.
 
-Solution Oriented Schemes have the lowest average Net AUM.
+* Growth/Equity Schemes → Highest average Net AUM (~180,000).
+
+* Other Schemes → ~162,000, showing strong late growth.
+
+* Hybrid Schemes → ~126,000, steady performance.
+
+* Income/Debt Schemes → ~60,000–70,000, relatively stable.
+
+* Solution Oriented Schemes → Lowest (~30,000–40,000), marginal role.
+
+* Equity schemes dominate asset size, Hybrid schemes balance growth, Debt schemes plateau, Other Schemes surge post‑2021, and Solution Oriented remain weakest.
+
+ * Investor preference leans toward equity and hybrid categories, while debt schemes provide stability and solution‑oriented schemes remain underutilized.
 
 ---
 
@@ -498,11 +538,27 @@ Solution Oriented Schemes have the lowest average Net AUM.
 **Chart Title:**
 `Average Number of Folios Across Years`
 
+<img width="1108" height="606" alt="Screenshot 2026-08-31 184417" src="https://github.com/user-attachments/assets/7a1e9d72-c428-4d51-a830-dd1d2aa256a2" />
+
+
 ### Insight
+* The line chart shows investor participation trends from 2019 to 2024
 
-Investor participation increased steadily from 2019 to 2024.
+* 2019 → ~1.8 million average folios.
 
-The average number of folios nearly doubled over the period, indicating strong growth in investor participation.
+* 2020 → ~2.1 million.
+
+* 2021 → ~2.5 million.
+
+* 2022 → ~2.9 million.
+
+* 2023 → ~3.2 million.
+
+* 2024 → ~3.6 million.
+
+* Folios increase steadily every year, nearly doubling over the six‑year period.
+
+* Investor participation in mutual funds shows consistent growth, reflecting rising confidence and adoption across the reporting years.
 
 ---
 
@@ -511,13 +567,26 @@ The average number of folios nearly doubled over the period, indicating strong g
 **Chart Title:**
 `Relationship Between Number of Folios and Net AUM`
 
-### Insight
+<img width="991" height="612" alt="Screenshot 2026-08-31 184630" src="https://github.com/user-attachments/assets/2805a43d-cd5d-430b-beef-9e1f4379ea48" />
 
-The analysis shows a positive relationship between the number of folios and Net AUM.
 
-Generally, schemes with more investors tend to have higher AUM.
+### Insight 
 
-However, dispersion is present, indicating that investor count is not the only factor influencing AUM. Some schemes achieve high AUM with comparatively fewer folios, suggesting the influence of larger individual investments.
+* The scatterplot shows how Net AUM relates to the number of folios, with points colored by net flow status.
+
+* General trend: higher folios → higher Net AUM.
+
+# Clusters:
+
+* Many schemes around 0.5–1 million folios with Net AUM ~30,000–50,000.
+
+* Some schemes with few folios (<200,000) still reach Net AUM >200,000, showing large-ticket investors.
+
+* Net flow status: Positive flows dominate in higher folio ranges, while negative flows appear scattered across lower folio counts.
+
+* Strong positive correlation overall, but dispersion exists — not all schemes with high folios have equally high AUM.
+
+* Investor participation generally drives asset growth, but institutional or high-value investors can skew results, allowing some schemes to achieve large AUM with fewer folios.
 
 ---
 
@@ -528,14 +597,22 @@ However, dispersion is present, indicating that investor count is not the only f
 **Chart Title:**
 `Average Fund Mobilized by Scheme Type Across Years`
 
-### Insight
+<img width="1109" height="606" alt="Screenshot 2026-08-31 185147" src="https://github.com/user-attachments/assets/863f506b-687c-4a43-9ce3-e87e6b2107dd" />
 
-Open Ended Schemes consistently mobilize the highest amount of funds.
 
-Close Ended and Interval Schemes remain comparatively low throughout the period.
+### Insight 
+* The bar chart compares average fund mobilization across scheme types from 2019–2024.
 
-Open Ended Schemes dominate investment activity, with a peak in 2019, a decline during the middle of the period, and an increase again toward 2024.
+* Open Ended Schemes → Consistently highest mobilization, peaking around 2019 (~ 20,000), dipping mid‑period, and rising again by 2024 (~ 18,000).
 
+* Close Ended Schemes → Very low mobilization, generally <1,000.
+
+* Interval Schemes → Negligible values, close to zero across all years.
+
+* Open Ended schemes dominate every year, showing flexibility and liquidity appeal. Close Ended and Interval schemes remain flat and insignificant.
+
+* Investment activity is driven almost entirely by Open Ended schemes, with 2019’s spike likely reflecting favorable market or regulatory conditions. Other scheme types play only a minor role.
+  
 ---
 
 ## 2. Average Net AUM by Scheme Category Across Years
@@ -543,17 +620,24 @@ Open Ended Schemes dominate investment activity, with a peak in 2019, a decline 
 **Chart Title:**
 `Average Net AUM by Scheme Category Across Years`
 
-### Key Findings
+<img width="1205" height="608" alt="Screenshot 2026-08-31 185424" src="https://github.com/user-attachments/assets/e3d3f4d6-46a7-4335-a1b7-61e8bbbfa94b" />
 
-* Growth/Equity Schemes increased from approximately **58K in 2019 to 180K in 2024**.
-* Hybrid Schemes increased steadily to approximately **126K**.
-* Income/Debt Schemes remained relatively stable around **60K–70K**.
-* Other Schemes showed strong growth after 2021, reaching approximately **162K**.
-* Solution Oriented Schemes remained comparatively low but showed gradual improvement.
+### Insights:
+The heatmap shows average Net AUM across scheme categories from 2019–2024, highlighting consistency and growth.
 
-### Overall Insight
+* Growth/Equity Schemes rise from ~58k in 2019 to ~180k in 2024.
 
-Growth/Equity and Hybrid categories show strong AUM growth, while Income/Debt categories remain relatively stable.
+* Hybrid Schemes grow steadily to ~126k.
+
+* Income/Debt Schemes stay stable around ~60–70k.
+
+* Other Schemes surge post-2021, reaching ~162k.
+
+* Solution Oriented Schemes remain weakest, though gradually improving.
+
+* Equity and Hybrid categories consistently attract higher AUM, Debt plateaus, and Other Schemes show late momentum. Overall growth is visible across most categories, especially after 2020.
+
+* Equity drives expansion, Hybrids balance growth, Debt remains steady but less appealing, Other Schemes diversify investor choices, and Solution Oriented stay marginal.
 
 ---
 
@@ -562,6 +646,9 @@ Growth/Equity and Hybrid categories show strong AUM growth, while Income/Debt ca
 **Chart Title:**
 `Investment Activity and Investor Participation by Scheme Category`
 
+<img width="1255" height="729" alt="Screenshot 2026-08-31 201351" src="https://github.com/user-attachments/assets/91d9dac1-6b16-48c2-9b09-8c489c2771c0" />
+
+
 The analysis compares normalized averages of:
 
 * Fund Mobilized
@@ -569,12 +656,25 @@ The analysis compares normalized averages of:
 * Net Inflow/Outflow
 * Number of Folios
 
-### Key Findings
+### Insights:
+* The chart compares normalized averages of fund mobilization, redemption, net inflows/outflows, and folios across scheme categories.
 
-* Income/Debt Schemes lead in fund mobilization and redemption.
-* Other Schemes show the strongest net inflows.
-* Growth/Equity Schemes have the highest number of folios.
-* Solution Oriented Schemes remain comparatively low.
+* Income/Debt Schemes → Highest Fund Mobilized (~ 1.0) and Repurchase/Redemption (~0.95).
+👉 Heavy liquidity cycles with large inflows and outflows.
+
+Growth/Equity Schemes → Highest Number of Folios (~ 1.0).
+👉 Broad investor participation and retail adoption.
+
+Other Schemes → Highest Net Inflow/Outflow (~ 0.85).
+👉 Strong positive fund flows, especially post‑2021.
+
+Hybrid Schemes → Moderate across all metrics (~ 0.5–0.6).
+👉 Balanced role in both investor participation and fund activity.
+
+Solution Oriented Schemes → Lowest across all metrics (< 0.2).
+👉 Minimal impact on overall investment activity.
+  
+Debt schemes dominate liquidity, equity schemes lead in participation, other schemes show strong inflows, hybrid schemes balance both, and solution‑oriented schemes remain marginal.
 
 ---
 
