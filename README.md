@@ -741,7 +741,7 @@ Mutual-Fund-Investment-Performance-Analysis/
 ### 1. Clone the Repository
 bash
 [git clone https://github.com/KanimozhiGanesan18/Mutual-Funds-Report-.git
-](https://github.com/KanimozhiGanesan18/Mutual_Funds_Report-/edit/main/README.md)
+](https://github.com/KanimozhiGanesan18/Mutual_Funds_Report-)
 
 ### 2. Open the Notebook
 Open the notebook file:
