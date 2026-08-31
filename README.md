@@ -181,7 +181,7 @@ Business Insights
 ---
 
 
-# 🧹 Data Pre-Processing
+## 🧹 Data Pre-Processing
 
 The dataset was systematically inspected and cleaned before performing statistical and visual analysis.
 
@@ -325,7 +325,7 @@ repurchase_redemption
 <img width="719" height="739" alt="Screenshot 2026-08-31 175759" src="https://github.com/user-attachments/assets/38ae0558-ae15-4ae3-82ed-b4c908348d10" />
 
 
-### Insights
+### Interpretation:
 
 Most numerical variables show a considerable difference between their mean and median. This indicates that the dataset contains extreme high-value observations.
 
@@ -354,7 +354,7 @@ Variance and standard deviation were used to understand the spread and variabili
 
 <img width="751" height="751" alt="Screenshot 2026-08-31 180433" src="https://github.com/user-attachments/assets/ef0c7341-6128-4edd-913d-40cae92dd883" />
 
-### Insights
+### Interpretation:
 
 * `no_of_folios` has the highest variance, showing very uneven investor participation.
 * `net_aum` and `avg_net_aum` show considerable variation.
@@ -377,7 +377,7 @@ The standard deviation results show:
 <img width="752" height="556" alt="Screenshot 2026-08-31 181710" src="https://github.com/user-attachments/assets/23c126d1-88a2-4505-88b9-6dd8e4d04b7e" />
 
 
-### Insights
+### Interpretation:
 
 The number of folios has the largest absolute spread, indicating major differences in investor participation across records.
 
@@ -407,7 +407,7 @@ Skewness was analyzed to understand whether the numerical variables are balanced
 <img width="612" height="710" alt="Screenshot 2026-08-31 182608" src="https://github.com/user-attachments/assets/bed349ec-637b-47d1-8e1d-b968253d8542" />
 
 
-### Insights
+### Interpretation:
 
 * `net_aum` and `avg_net_aum` are positively skewed because a few schemes have very large AUM.
 * `no_of_folios` is positively skewed because some schemes have exceptionally high investor participation.
@@ -436,7 +436,7 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 <img width="691" height="724" alt="Screenshot 2026-08-31 183158" src="https://github.com/user-attachments/assets/305f743f-da48-4440-bc04-13ad4b9e1171" />
 
 
-### Insights
+### Interpretation:
 
 * `net_aum` and `avg_net_aum` have high kurtosis, indicating heavy tails.
 * `net_inflow_outflow` has extremely high kurtosis, showing that most observations are concentrated around zero while a few extreme observations exist.
@@ -457,7 +457,7 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 <img width="987" height="486" alt="Screenshot 2026-08-31 183440" src="https://github.com/user-attachments/assets/311785d4-959d-42ad-98ba-6726577144ef" />
 
 
-# Interpretation:
+### Interpretation:
 
 Income/Debt schemes dominate (~1,400 records).
 
@@ -465,7 +465,7 @@ Equity schemes follow (~900 records).
 
 Hybrid (~400), Other (~500), and Solution Oriented (~150) are smaller groups.
 
-# Business Insights:
+### Business Insights:
 
 Debt schemes provide liquidity but are highly cyclical.
 
