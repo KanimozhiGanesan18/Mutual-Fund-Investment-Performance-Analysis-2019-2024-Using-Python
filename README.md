@@ -736,26 +736,25 @@ Mutual-Fund-Investment-Performance-Analysis/
 
 ---
 
-# ▶️ How to Run the Project
+▶️ How to Run the Project
 
 ### 1. Clone the Repository
-
-[```bash
+bash
 git clone https://github.com/KanimozhiGanesan18/Mutual-Funds-Report-.git
-```](https://github.com/KanimozhiGanesan18/Mutual_Funds_Report-)
 
 ### 2. Open the Notebook
+Open the notebook file:
 
-[Main_Project_Mutual Fund Investment & Performance Analysis.ipynb
-](https://drive.google.com/drive/folders/1upYOSiedc5vPhXYsE2Bj6KP4AwoOc8Zn?usp=drive_link) ```
-
-using **Google Colab** or **Jupyter Notebook**.
+text
+Main_Project_Mutual Fund Investment & Performance Analysis.ipynb
+You can run it using Google Colab or Jupyter Notebook.
+Google Drive Link to Notebook
 
 ### 3. Install Required Libraries
+Make sure the following Python libraries are installed:
 
-```bash
+bash
 pip install pandas numpy matplotlib seaborn openpyxl
-```
 
 ### 4. Run the Notebook
 
