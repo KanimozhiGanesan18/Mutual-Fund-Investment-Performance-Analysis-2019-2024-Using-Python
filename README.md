@@ -14,25 +14,25 @@
 
 # 🧭 Project Navigation
 
-* Project Overview  [## 📌 Project Overview
-](url)
-* Objectives  
-* Problem Statement  
-* Business Understanding  
-* Dataset Information  
-* Attribute / Data Dictionary  
-* Tools & Technologies  
-* Data Pre‑Processing  
-* Feature Engineering
-* Statistical Analysis
-* Exploratory Data Analysis
-* Key Findings  
-* Business Insights  
-* Project Structure  
-* How to Run the Project  
-* Analysis Techniques Used  
-* Conclusion  
-* Author
+- [Project Overview](#project-overview)
+- [Objectives](#objectives)
+- [Problem-Statement](#problem-statement)
+- [Business-Understanding](#business-understanding)
+- [Dataset-Information](#dataset-information)
+- [Attribute--Data-Dictionary](#attribute--data-dictionary)
+- [Tools--Technologies](#tools--technologies)
+- [Project-Workflow](#project-workflow)
+- [Data-Pre-Processing](#data-pre-processing)
+- [Feature-Engineering](#feature-engineering)
+- [Statistical-Analysis](#statistical-analysis)
+- [Exploratory-Data-Analysis](#exploratory-data-analysis)
+- [Key-Findings](#key-findings)
+- [Business-Insights](#business-insights)
+- [Project-Structure](#project-structure)
+- [How-to-Run-the-Project](#how-to-run-the-project)
+- [Analysis-Techniques-Used](#analysis-techniques-used)
+- [Conclusion](#conclusion)
+- [Author](#author)
 
 ---
 
