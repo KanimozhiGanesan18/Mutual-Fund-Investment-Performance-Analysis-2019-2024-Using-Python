@@ -12,43 +12,30 @@
 
 ---
 
-#🧭 Project Navigation
+# 🧭 Project Navigation
 
-* Project Overview  
-
+* Project Overview  [## 📌 Project Overview
+](url)
 * Objectives  
-
 * Problem Statement  
-
 * Business Understanding  
-
 * Dataset Information  
-
 * Attribute / Data Dictionary  
-
 * Tools & Technologies  
-
 * Data Pre‑Processing  
-
 * Feature Engineering
-
 * Statistical Analysis
-
 * Exploratory Data Analysis
-
 * Key Findings  
-
 * Business Insights  
-
 * Project Structure  
-
 * How to Run the Project  
-
 * Analysis Techniques Used  
-
 * Conclusion  
+* Author
 
-* Author  
+---
+
 ## 📌 Project Overview
 
 This project analyzes **AMFI mutual fund data from 2019 to 2024** using Python to understand mutual fund investment and performance patterns.
