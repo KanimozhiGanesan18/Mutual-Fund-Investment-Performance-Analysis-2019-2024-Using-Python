@@ -276,9 +276,6 @@ Negative → 1,157 records
 
 No Flow → 325 records
 
-# Insight:  
-This feature highlights overall fund movement direction, making inflow/outflow trends easier to interpret.
-
 # 2. Investment Status
 Purpose:  
 Compare fund mobilization vs redemption to identify investment behavior.
@@ -290,9 +287,6 @@ More Mobilization → 1,633 records
 More Redemption → 1,157 records
 
 Equal → 325 records
-
-# Insight:  
-This feature shows whether schemes are attracting new investments, facing higher redemptions, or balanced.
 
 ---
 
@@ -488,7 +482,7 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 <img width="982" height="606" alt="Screenshot 2026-08-31 183827" src="https://github.com/user-attachments/assets/add79b3d-39ff-46bc-859f-f8966cbda8c7" />
 
 
-### Insight:
+### Insights:
 
 * The histogram shows how Net AUM is distributed across schemes.
 
@@ -514,7 +508,7 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 <img width="1111" height="607" alt="Screenshot 2026-08-31 184102" src="https://github.com/user-attachments/assets/6464d6fc-e8a0-485e-82c5-cfc359cf4afa" />
 
 
-### Insight:
+### Insights:
 * The chart compares average Net AUM across scheme categories.
 
 * Growth/Equity Schemes → Highest average Net AUM (~180,000).
@@ -541,7 +535,7 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 <img width="1108" height="606" alt="Screenshot 2026-08-31 184417" src="https://github.com/user-attachments/assets/7a1e9d72-c428-4d51-a830-dd1d2aa256a2" />
 
 
-### Insight
+### Insights:
 * The line chart shows investor participation trends from 2019 to 2024
 
 * 2019 → ~1.8 million average folios.
@@ -576,7 +570,7 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 
 * General trend: higher folios → higher Net AUM.
 
-# Clusters:
+* Clusters:
 
 * Many schemes around 0.5–1 million folios with Net AUM ~30,000–50,000.
 
@@ -600,7 +594,7 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 <img width="1109" height="606" alt="Screenshot 2026-08-31 185147" src="https://github.com/user-attachments/assets/863f506b-687c-4a43-9ce3-e87e6b2107dd" />
 
 
-### Insight 
+### Insights:
 * The bar chart compares average fund mobilization across scheme types from 2019–2024.
 
 * Open Ended Schemes → Consistently highest mobilization, peaking around 2019 (~ 20,000), dipping mid‑period, and rising again by 2024 (~ 18,000).
