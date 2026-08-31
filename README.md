@@ -4,6 +4,12 @@
 
 ---
 
+🚀 Mutual Fund Dataset • 2019–2024 • End‑to‑End Analytics
+🔎 Descriptive → Diagnostic → Predictive → Prescriptive  
+💡 Turning raw AMFI mutual fund data into actionable investment insights
+
+---
+
 ## 📌 Project Overview
 
 This project analyzes **AMFI mutual fund data from 2019 to 2024** using Python to understand mutual fund investment and performance patterns.
