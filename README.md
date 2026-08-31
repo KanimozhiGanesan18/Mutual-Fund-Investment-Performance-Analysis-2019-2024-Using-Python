@@ -150,6 +150,8 @@ The dataset contains **56 scheme names, 3 scheme types, and 5 scheme categories*
 ---
 
 # 🔄 Project Workflow
+
+```text
 Data Collection
       ↓
 Initial EDA
@@ -173,6 +175,8 @@ Bivariate Analysis
 Multivariate Analysis
       ↓
 Business Insights
+```
+
 
 ---
 
