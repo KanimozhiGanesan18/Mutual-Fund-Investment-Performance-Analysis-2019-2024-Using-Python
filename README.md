@@ -262,23 +262,37 @@ The temporary validation column was removed after verification.
 
 # ⚙️ Feature Engineering
 
-Feature engineering was used to create variables that support the analysis.
+Feature engineering was applied to derive new, meaningful variables from the raw dataset. These features help classify fund flows, investment activity, and enable year‑wise analysis.
 
-### Year Feature
+# 1. Net Flow Status
+Purpose:  
+Classify whether a scheme’s net inflow/outflow is positive, negative, or neutral.
 
-The reporting year was extracted from the `date` column to enable year-wise analysis.
+# Result:
 
-This feature was used for:
+Positive → 1,633 records
 
-* AUM trend analysis
-* Investor participation analysis
-* Fund mobilization analysis
-* Scheme-category comparison
-* Year-wise multivariate analysis
+Negative → 1,157 records
 
-### Net Flow Status
+No Flow → 325 records
 
-The net flow information was used to identify whether observations represented positive or negative fund movement.
+# Insight:  
+This feature highlights overall fund movement direction, making inflow/outflow trends easier to interpret.
+
+# 2. Investment Status
+Purpose:  
+Compare fund mobilization vs redemption to identify investment behavior.
+
+# Result:
+
+More Mobilization → 1,633 records
+
+More Redemption → 1,157 records
+
+Equal → 325 records
+
+# Insight:  
+This feature shows whether schemes are attracting new investments, facing higher redemptions, or balanced.
 
 ---
 
