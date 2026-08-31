@@ -1,89 +1,715 @@
-📌 Project Title
+# 📊 Mutual Fund Investment & Performance Analysis (2019–2024) Using Python
 
-**Mutual Fund Investment & Performance Analysis Using Python**
+> A data-driven analysis of AMFI mutual fund data to understand investment trends, investor participation, fund flows, and Net AUM across different mutual fund scheme categories from 2019 to 2024.
 
-🎯 Project Objective
+---
 
-1.Maintain all mutual fund information (schemes, categories, scheme types, investors, fund mobilization, redemptions, and AUM) in one structured dataset.
+## 📌 Project Overview
 
-2.Monitor total fund mobilization, redemption, net inflow/outflow, and AUM over time.
+This project analyzes **AMFI mutual fund data from 2019 to 2024** using Python to understand mutual fund investment and performance patterns.
 
-3.Evaluate mutual fund performance by scheme category, scheme type, and reporting period.
+The analysis focuses on:
 
-4.Analyze investor participation using the number of folios across different mutual fund categories.
+* Mutual fund scheme categories
+* Investor participation
+* Fund mobilization
+* Repurchase and redemption
+* Net inflow and outflow
+* Net Assets Under Management (Net AUM)
+* Average Net AUM
+* Changes across reporting years
+* Differences between scheme types and categories
 
-5.Identify investment trends and patterns to understand which mutual fund categories attract the most investments.
+The project combines **Data Cleaning, Exploratory Data Analysis (EDA), Feature Engineering, Statistical Analysis, and Data Visualization** to transform raw mutual fund data into meaningful business insights.
 
-6.Compare fund mobilization and redemption to identify categories with positive and negative net inflows.
+---
 
+## 🎯 Objectives
 
+The main objective of this project is to analyze AMFI mutual fund data using Python and identify useful patterns in mutual fund investment and investor participation.
 
-🛠️ Tools & Technologies
+### Key Objectives
 
-Python
+1. Identify which mutual fund categories attract more investors and investments.
+2. Analyze how **Net AUM changes over time**.
+3. Compare mutual fund performance across different scheme types and categories.
+4. Identify categories with higher **fund mobilization and redemption**.
+5. Analyze positive and negative **net inflow/outflow** patterns.
+6. Examine investor participation using the **number of folios**.
+7. Study the relationship between **number of folios and Net AUM**.
+8. Analyze investment activity across different reporting periods.
+9. Identify categories that consistently attract investments.
+10. Generate data-driven business insights through statistical analysis and visualization.
 
-Pandas
+---
 
-NumPy
+# ❓ Problem Statement
 
-Matplotlib
+The raw mutual fund dataset does not directly show which scheme categories perform better, how investment activity changes over time, or where positive and negative fund flows occur.
 
-Seaborn
+Therefore, this project analyzes AMFI mutual fund data using Python to identify:
 
-Google Colab / Jupyter Notebook
+* Mutual fund performance
+* Investment trends
+* Investor participation
+* Fund-flow patterns
+* Differences across scheme categories
+* Changes across reporting periods
 
+The analysis uses **statistical techniques and visualizations** to convert raw data into meaningful business insights.
 
-📁 Project Workflow
+---
 
+# 🏢 Business Understanding
 
-Problem Definition
-        
-↓
+The analysis is designed to answer the following business questions.
 
-Dataset Selection
-       
-↓
+### 💰 Fund Performance
 
-Business Understanding
-       
-↓
+* Which scheme category has the highest Net AUM?
+* Which scheme type performs better?
+* How does AUM change over time?
 
+### 💵 Investment Activity
+
+* Which categories receive the highest fund mobilization?
+* Which categories have the highest redemption?
+* Which categories have positive or negative net inflow/outflow?
+
+### 👥 Investor Participation
+
+* Which categories have the highest number of folios?
+* How does investor participation change over time?
+* Is there a relationship between folios and AUM?
+
+### 📈 Trend Analysis
+
+* How does mutual fund activity change across reporting periods?
+* Are there periods with unusually high or low investment activity?
+* Which categories consistently attract investments?
+
+---
+
+# 📂 Dataset Information
+
+| Attribute       | Details                           |
+| --------------- | --------------------------------- |
+| **Data Source** | India's Extensive Public Datasets |
+| **Location**    | India                             |
+| **Domain**      | Economy                           |
+| **Period**      | 2019–2024                         |
+| **Records**     | 3,115                             |
+| **Attributes**  | 14                                |
+| **File Format** | Excel                             |
+| **Environment** | Google Colab                      |
+
+The dataset contains mutual fund information related to scheme names, scheme types, scheme categories, investor folios, fund mobilization, redemption, net flows, Net AUM, and segregated portfolios.
+
+---
+
+# 📋 Attribute / Data Dictionary
+
+| Column                             | Description                                                         |
+| ---------------------------------- | ------------------------------------------------------------------- |
+| `id`                               | Unique identifier for each record                                   |
+| `date`                             | Reporting date of the mutual fund data                              |
+| `scheme_name`                      | Name of the mutual fund scheme                                      |
+| `scheme_type`                      | Type of scheme such as Open Ended, Close Ended, or Interval Schemes |
+| `scheme_category`                  | Category of the mutual fund scheme                                  |
+| `no_of_schemes`                    | Number of schemes                                                   |
+| `no_of_folios`                     | Number of investor folios                                           |
+| `fund_mobilized`                   | Amount of funds mobilized                                           |
+| `repurchase_redemption`            | Amount involved in repurchase/redemption                            |
+| `net_inflow_outflow`               | Net movement of funds                                               |
+| `net_aum`                          | Net Assets Under Management                                         |
+| `avg_net_aum`                      | Average Net Assets Under Management                                 |
+| `no_of_segregated_portfolios`      | Number of segregated portfolios                                     |
+| `net_aum_in_segregated_portfolios` | Net AUM held in segregated portfolios                               |
+
+The dataset contains **56 scheme names, 3 scheme types, and 5 scheme categories**.
+
+---
+
+# 🛠️ Tools & Technologies
+
+### Programming Language
+
+* Python 3.10+
+
+### Libraries
+
+* **Pandas** – Data manipulation and analysis
+* **NumPy** – Numerical operations
+* **Matplotlib** – Data visualization
+* **Seaborn** – Statistical visualization
+
+### Development Environment
+
+* **Google Colab**
+
+---
+
+# 🔄 Project Workflow
+
+```text
+Data Collection
+      ↓
 Initial EDA
-        
-↓
-
+      ↓
+Data Inspection
+      ↓
 Data Cleaning
-       
-↓
-
+      ↓
 Data Validation
-       
-↓
+      ↓
+Feature Engineering
+      ↓
+Final EDA
+      ↓
+Statistical Analysis
+      ↓
+Univariate Analysis
+      ↓
+Bivariate Analysis
+      ↓
+Multivariate Analysis
+      ↓
+Business Insights
+```
 
-Exploratory Analysis
-       
-↓
+---
 
-Visualization
-       
-↓
+# 🧹 Data Pre-Processing
 
-Trend & Relationship Analysis
-      
-↓
+The dataset was systematically inspected and cleaned before performing statistical and visual analysis.
 
-Problem Solving       
-      
-↓
+### Initial Data Inspection
 
-Insights & Recommendations
-       
-↓
+The following checks were performed:
 
-Final Report
+* Dataset shape
+* First and last records
+* Sample records
+* Data types
+* Missing values
+* Duplicate IDs
+* Unique values
+* Value counts
+* Descriptive statistics
+* Special characters
+* Zero values
+* Negative values
 
+### Dataset Shape
 
-👩‍💻 Project Type
+```text
+Rows    : 3,115
+Columns : 14
+```
 
+### ID Cleaning
 
-Data Analyst | Python | Exploratory Data Analysis | Data Visualization | Business Insights
+The `id` column was checked for:
+
+* Data type
+* Missing values
+* Duplicate values
+
+No missing IDs or duplicate IDs were found. The column was subsequently converted from integer to string.
+
+### Scheme Name Cleaning
+
+Special characters such as:
+
+```text
+#
+$
+```
+
+were identified in some scheme names and removed to maintain consistent categorical values.
+
+### Zero-Value Handling
+
+Zero values were not automatically treated as missing values because a zero can represent a genuine observation in the dataset.
+
+---
+
+# 🔍 Data Validation
+
+### Net Inflow/Outflow Validation
+
+The following relationship was verified:
+
+```text
+Net Inflow/Outflow
+=
+Fund Mobilized - Repurchase/Redemption
+```
+
+A temporary `calculated_net_flow` feature was created to validate the existing `net_inflow_outflow` column.
+
+The maximum absolute difference was approximately:
+
+```text
+0.010000000043874024
+```
+
+This represents a very small floating-point difference, confirming that the relationship is consistent.
+
+The temporary validation column was removed after verification.
+
+---
+
+# ⚙️ Feature Engineering
+
+Feature engineering was used to create variables that support the analysis.
+
+### Year Feature
+
+The reporting year was extracted from the `date` column to enable year-wise analysis.
+
+This feature was used for:
+
+* AUM trend analysis
+* Investor participation analysis
+* Fund mobilization analysis
+* Scheme-category comparison
+* Year-wise multivariate analysis
+
+### Net Flow Status
+
+The net flow information was used to identify whether observations represented positive or negative fund movement.
+
+---
+
+# 📊 Statistical Analysis
+
+## 1. Measure of Central Tendency
+
+Mean, Median, and Mode were calculated for the major numerical variables.
+
+### Variables
+
+```text
+net_aum
+avg_net_aum
+net_inflow_outflow
+no_of_folios
+fund_mobilized
+repurchase_redemption
+```
+
+### Key Results
+
+| Variable                |      Mean |    Median |
+| ----------------------- | --------: | --------: |
+| `net_aum`               | 75,805.39 | 31,617.13 |
+| `avg_net_aum`           | 76,722.93 | 31,897.35 |
+| `net_inflow_outflow`    |    473.37 |     26.85 |
+| `no_of_folios`          | 2,518,408 |   521,606 |
+| `fund_mobilized`        | 20,263.59 |  1,022.55 |
+| `repurchase_redemption` | 19,790.22 |    880.05 |
+
+### Interpretation
+
+Most numerical variables show a considerable difference between their mean and median. This indicates that the dataset contains extreme high-value observations.
+
+The distributions are generally right-skewed, meaning most observations are concentrated at lower values while a smaller number of observations have very high values.
+
+Therefore, the **median can sometimes provide a more representative view of a typical observation than the mean**.
+
+### Visualization
+
+**Chart:** Distribution of numerical variables with Mean, Median and Mode
+
+---
+
+# 📏 2. Variance & Standard Deviation
+
+Variance and standard deviation were used to understand the spread and variability of the numerical variables.
+
+### Variance Results
+
+| Variable                |     Variance |
+| ----------------------- | -----------: |
+| `no_of_folios`          |  1.52 × 10¹³ |
+| `net_aum`               |  ~9.58 × 10⁹ |
+| `avg_net_aum`           |  ~9.99 × 10⁹ |
+| `fund_mobilized`        | ~1.18 × 10¹⁰ |
+| `repurchase_redemption` | ~1.18 × 10¹⁰ |
+| `net_inflow_outflow`    |   8.33 × 10⁷ |
+
+### Key Insights
+
+* `no_of_folios` has the highest variance, showing very uneven investor participation.
+* `net_aum` and `avg_net_aum` show considerable variation.
+* `fund_mobilized` and `repurchase_redemption` have similar levels of variability.
+* `net_inflow_outflow` has comparatively lower variance.
+
+### Standard Deviation
+
+The standard deviation results show:
+
+* `no_of_folios` → approximately **3.90 million**
+* `net_aum` → approximately **97,880**
+* `avg_net_aum` → approximately **99,935**
+* `fund_mobilized` → approximately **108,655**
+* `repurchase_redemption` → approximately **108,423**
+* `net_inflow_outflow` → approximately **9,126**
+
+### Interpretation
+
+The number of folios has the largest absolute spread, indicating major differences in investor participation across records.
+
+Fund mobilization and redemption have similar standard deviations, showing that their fluctuations occur at comparable magnitudes.
+
+Net inflow/outflow has a much smaller standard deviation because inflows and outflows can offset one another.
+
+### Visualizations
+
+* **Box Plot of Numerical Variables – Variance Insight**
+* **Deviation from Mean – Numerical Variables**
+
+---
+
+# 📐 3. Skewness
+
+Skewness was analyzed to understand whether the numerical variables are balanced or tilted toward one side.
+
+### Results
+
+| Variable                | Skewness |
+| ----------------------- | -------: |
+| `net_aum`               |     2.39 |
+| `avg_net_aum`           |     2.43 |
+| `net_inflow_outflow`    |    -3.42 |
+| `no_of_folios`          |     1.98 |
+| `fund_mobilized`        |    11.40 |
+| `repurchase_redemption` |    11.29 |
+
+### Interpretation
+
+* `net_aum` and `avg_net_aum` are positively skewed because a few schemes have very large AUM.
+* `no_of_folios` is positively skewed because some schemes have exceptionally high investor participation.
+* `fund_mobilized` and `repurchase_redemption` are extremely positively skewed due to a small number of very large transactions.
+* `net_inflow_outflow` has strong negative skewness because extreme negative outflows extend the distribution toward the left.
+
+### Visualization
+
+**Chart:** Distribution of Numerical Variables with Skewness
+
+---
+
+# 📊 4. Kurtosis
+
+Kurtosis was analyzed to understand the presence of extreme observations and heavy tails.
+
+### Results
+
+| Variable                | Kurtosis |
+| ----------------------- | -------: |
+| `net_aum`               |     7.73 |
+| `avg_net_aum`           |     7.75 |
+| `net_inflow_outflow`    |   108.32 |
+| `no_of_folios`          |     3.42 |
+| `fund_mobilized`        |   175.82 |
+| `repurchase_redemption` |   172.09 |
+
+### Interpretation
+
+* `net_aum` and `avg_net_aum` have high kurtosis, indicating heavy tails.
+* `net_inflow_outflow` has extremely high kurtosis, showing that most observations are concentrated around zero while a few extreme observations exist.
+* `fund_mobilized` and `repurchase_redemption` have very high kurtosis because occasional large transactions create extreme values.
+* `no_of_folios` has comparatively moderate kurtosis.
+
+### Visualization
+
+**Chart:** Density of Numerical Variables with Kurtosis
+
+---
+
+# 📈 Exploratory Data Analysis
+
+## Univariate Analysis
+
+### 1. Distribution of Scheme Categories
+
+**Chart Title:**
+`Count of Records by Scheme Category`
+
+### Insight
+
+Income/Debt Oriented Schemes dominate the dataset, followed by Growth/Equity Oriented Schemes.
+
+Solution Oriented Schemes have comparatively fewer observations.
+
+This distribution should be considered when interpreting category-level results because smaller categories have less representation.
+
+---
+
+### 2. Distribution of Net AUM
+
+**Chart Title:**
+`Distribution of Net AUM`
+
+### Insight
+
+Net AUM is strongly right-skewed.
+
+Most records have relatively smaller AUM values, while a smaller number of schemes have very high AUM.
+
+This indicates significant variation in asset distribution across mutual fund schemes.
+
+---
+
+# 📊 Bivariate Analysis
+
+## 1. Average Net AUM by Scheme Category
+
+**Chart Title:**
+`Average Net AUM by Scheme Category`
+
+### Insight
+
+Growth/Equity Oriented Schemes have the highest average Net AUM.
+
+Income/Debt Oriented Schemes are highly represented but have comparatively moderate average AUM.
+
+Solution Oriented Schemes have the lowest average Net AUM.
+
+---
+
+## 2. Average Number of Folios Across Years
+
+**Chart Title:**
+`Average Number of Folios Across Years`
+
+### Insight
+
+Investor participation increased steadily from 2019 to 2024.
+
+The average number of folios nearly doubled over the period, indicating strong growth in investor participation.
+
+---
+
+## 3. Relationship Between Number of Folios and Net AUM
+
+**Chart Title:**
+`Relationship Between Number of Folios and Net AUM`
+
+### Insight
+
+The analysis shows a positive relationship between the number of folios and Net AUM.
+
+Generally, schemes with more investors tend to have higher AUM.
+
+However, dispersion is present, indicating that investor count is not the only factor influencing AUM. Some schemes achieve high AUM with comparatively fewer folios, suggesting the influence of larger individual investments.
+
+---
+
+# 📊 Multivariate Analysis
+
+## 1. Average Fund Mobilized by Scheme Type Across Years
+
+**Chart Title:**
+`Average Fund Mobilized by Scheme Type Across Years`
+
+### Insight
+
+Open Ended Schemes consistently mobilize the highest amount of funds.
+
+Close Ended and Interval Schemes remain comparatively low throughout the period.
+
+Open Ended Schemes dominate investment activity, with a peak in 2019, a decline during the middle of the period, and an increase again toward 2024.
+
+---
+
+## 2. Average Net AUM by Scheme Category Across Years
+
+**Chart Title:**
+`Average Net AUM by Scheme Category Across Years`
+
+### Key Findings
+
+* Growth/Equity Schemes increased from approximately **58K in 2019 to 180K in 2024**.
+* Hybrid Schemes increased steadily to approximately **126K**.
+* Income/Debt Schemes remained relatively stable around **60K–70K**.
+* Other Schemes showed strong growth after 2021, reaching approximately **162K**.
+* Solution Oriented Schemes remained comparatively low but showed gradual improvement.
+
+### Overall Insight
+
+Growth/Equity and Hybrid categories show strong AUM growth, while Income/Debt categories remain relatively stable.
+
+---
+
+## 3. Investment Activity and Investor Participation by Scheme Category
+
+**Chart Title:**
+`Investment Activity and Investor Participation by Scheme Category`
+
+The analysis compares normalized averages of:
+
+* Fund Mobilized
+* Repurchase/Redemption
+* Net Inflow/Outflow
+* Number of Folios
+
+### Key Findings
+
+* Income/Debt Schemes lead in fund mobilization and redemption.
+* Other Schemes show the strongest net inflows.
+* Growth/Equity Schemes have the highest number of folios.
+* Solution Oriented Schemes remain comparatively low.
+
+---
+
+# 🔑 Key Findings
+
+### 📌 Mutual Fund Categories
+
+**Income/Debt Oriented Schemes** dominate the dataset in terms of record representation.
+
+### 📌 Asset Management
+
+**Growth/Equity Oriented Schemes** have the highest average Net AUM.
+
+### 📌 Investor Participation
+
+Investor participation increased steadily between **2019 and 2024**.
+
+### 📌 Fund Mobilization
+
+**Open Ended Schemes** consistently dominate fund mobilization.
+
+### 📌 Fund Flows
+
+Other Schemes show strong net inflows, while Income/Debt Schemes have high mobilization and redemption activity.
+
+### 📌 AUM Growth
+
+Growth/Equity and Hybrid Schemes show strong growth in average Net AUM across the analyzed period.
+
+### 📌 Data Distribution
+
+Several financial variables are strongly skewed and contain extreme observations, making median and distribution-based analysis important.
+
+---
+
+# 💡 Business Insights
+
+The analysis suggests that different mutual fund categories play different roles in the mutual fund ecosystem.
+
+**Growth/Equity Schemes** demonstrate strong asset growth and broad investor participation, while **Income/Debt Schemes** contribute significantly to fund mobilization and redemption activity.
+
+The increase in folios from 2019 to 2024 indicates growing investor participation. The positive relationship between folios and Net AUM further suggests that increasing investor participation is generally associated with higher assets under management.
+
+The high skewness and kurtosis in financial variables also show that a relatively small number of observations can have a major influence on overall averages. Therefore, business decisions should consider **median values, category-level comparisons, and distribution patterns** rather than relying only on mean values.
+
+---
+
+# 📁 Project Structure
+
+```text
+Mutual-Fund-Investment-Performance-Analysis/
+│
+├── Main_Project_Mutual Fund Investment & Performance Analysis.ipynb
+│
+├── dataset/
+│   └── main project - mutual fund.xlsx
+│
+├── README.md
+│
+└── visualizations/
+    ├── univariate_analysis/
+    ├── bivariate_analysis/
+    └── multivariate_analysis/
+```
+
+---
+
+# ▶️ How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/KanimozhiGanesan18/Mutual-Funds-Report-.git
+```
+
+### 2. Open the Notebook
+
+Open:
+
+```text
+Main_Project_Mutual Fund Investment & Performance Analysis.ipynb
+```
+
+using **Google Colab** or **Jupyter Notebook**.
+
+### 3. Install Required Libraries
+
+```bash
+pip install pandas numpy matplotlib seaborn openpyxl
+```
+
+### 4. Run the Notebook
+
+Execute the cells sequentially to reproduce:
+
+* Data inspection
+* Data cleaning
+* Data validation
+* Feature engineering
+* Statistical analysis
+* EDA
+* Visualizations
+* Business insights
+
+---
+
+# 📚 Analysis Techniques Used
+
+```text
+✔ Data Inspection
+✔ Data Cleaning
+✔ Missing Value Analysis
+✔ Duplicate Detection
+✔ Data Validation
+✔ Feature Engineering
+✔ Descriptive Statistics
+✔ Central Tendency
+✔ Variance
+✔ Standard Deviation
+✔ Skewness
+✔ Kurtosis
+✔ Univariate Analysis
+✔ Bivariate Analysis
+✔ Multivariate Analysis
+✔ Trend Analysis
+✔ Correlation / Relationship Analysis
+✔ Business Insight Generation
+```
+
+---
+
+# 🏁 Conclusion
+
+This project demonstrates how Python can be used to analyze real-world mutual fund data and transform raw financial records into meaningful insights.
+
+The analysis identifies important patterns in **Net AUM, fund mobilization, redemption, investor participation, and net fund flows** across different scheme categories and reporting years.
+
+Overall, the project highlights the dominance of Open Ended Schemes in fund mobilization, the strong asset growth of Growth/Equity Schemes, increasing investor participation, and significant variability in financial metrics.
+
+The project provides practical experience in **data preprocessing, statistical analysis, exploratory data analysis, visualization, and business-oriented interpretation**.
+
+---
+
+## 👩‍💻 Author
+
+**Kanimozhi G**
+
+### Skills Demonstrated
+
+`Python` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `EDA` · `Data Cleaning` · `Feature Engineering` · `Statistical Analysis` · `Data Visualization` · `Business Analysis`
+
+---
