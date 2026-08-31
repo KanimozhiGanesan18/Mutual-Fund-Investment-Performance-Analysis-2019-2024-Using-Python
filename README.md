@@ -16,9 +16,9 @@
 
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
-- [Problem-Statement](#problem-statement)
-- [Business-Understanding](#business-understanding)
-- [Dataset-Information](#dataset-information)
+- [Problem Statement](#problem-statement)
+- [Business Understanding](#business-understanding)
+- [Dataset Information](#dataset-information)
 - [Attribute--Data-Dictionary](#attribute--data-dictionary)
 - [Tools--Technologies](#tools--technologies)
 - [Project-Workflow](#project-workflow)
