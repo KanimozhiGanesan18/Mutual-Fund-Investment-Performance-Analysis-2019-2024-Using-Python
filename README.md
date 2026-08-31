@@ -457,22 +457,23 @@ Kurtosis was analyzed to understand the presence of extreme observations and hea
 <img width="987" height="486" alt="Screenshot 2026-08-31 183440" src="https://github.com/user-attachments/assets/311785d4-959d-42ad-98ba-6726577144ef" />
 
 
-### Insights:
-* The chart shows the distribution of records across scheme categories.
+# Interpretation:
 
-* Income/Debt Schemes → ~1,400 records, the largest share.
+Income/Debt schemes dominate (~1,400 records).
 
-* Growth/Equity Schemes → ~900 records, second highest.
+Equity schemes follow (~900 records).
 
-* Other Schemes → ~500 records.
+Hybrid (~400), Other (~500), and Solution Oriented (~150) are smaller groups.
 
-* Hybrid Schemes → ~400 records.
+# Business Insights:
 
-* Solution Oriented Schemes → ~150 records, the smallest group.
+Debt schemes provide liquidity but are highly cyclical.
 
-* Debt schemes dominate in count, equity schemes follow strongly, while smaller categories (Hybrid, Other, Solution Oriented) are underrepresented.
-  
-* The dataset is skewed toward debt and equity schemes, meaning insights will be most reliable for these categories, while smaller groups may provide limited conclusions.
+Equity schemes attract strong retail participation and drive asset growth.
+
+Hybrid schemes balance risk/return but remain moderate.
+
+Solution Oriented schemes are underutilized and need targeted promotion.
 
 ---
 
