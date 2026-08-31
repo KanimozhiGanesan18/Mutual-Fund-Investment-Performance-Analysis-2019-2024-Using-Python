@@ -12,6 +12,43 @@
 
 ---
 
+#🧭 Project Navigation
+
+* Project Overview  
+
+* Objectives  
+
+* Problem Statement  
+
+* Business Understanding  
+
+* Dataset Information  
+
+* Attribute / Data Dictionary  
+
+* Tools & Technologies  
+
+* Data Pre‑Processing  
+
+* Feature Engineering
+
+* Statistical Analysis
+
+* Exploratory Data Analysis
+
+* Key Findings  
+
+* Business Insights  
+
+* Project Structure  
+
+* How to Run the Project  
+
+* Analysis Techniques Used  
+
+* Conclusion  
+
+* Author  
 ## 📌 Project Overview
 
 This project analyzes **AMFI mutual fund data from 2019 to 2024** using Python to understand mutual fund investment and performance patterns.
@@ -154,36 +191,6 @@ The dataset contains **56 scheme names, 3 scheme types, and 5 scheme categories*
 ### Development Environment
 
 * **Google Colab**
-
----
-
-# 🔄 Project Workflow
-
-```text
-Data Collection
-      ↓
-Initial EDA
-      ↓
-Data Inspection
-      ↓
-Data Cleaning
-      ↓
-Data Validation
-      ↓
-Feature Engineering
-      ↓
-Final EDA
-      ↓
-Statistical Analysis
-      ↓
-Univariate Analysis
-      ↓
-Bivariate Analysis
-      ↓
-Multivariate Analysis
-      ↓
-Business Insights
-```
 
 ---
 
