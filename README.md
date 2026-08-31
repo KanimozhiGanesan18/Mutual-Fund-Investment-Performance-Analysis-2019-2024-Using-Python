@@ -749,7 +749,6 @@ Open the notebook file:
 text
 [Main_Project_Mutual Fund Investment & Performance Analysis.ipynb
 ](https://drive.google.com/drive/folders/1upYOSiedc5vPhXYsE2Bj6KP4AwoOc8Zn?usp=drive_link)
-You can run it using Google Colab or Jupyter Notebook.
 
 ### 3. Install Required Libraries
 Make sure the following Python libraries are installed:
