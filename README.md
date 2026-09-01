@@ -808,6 +808,55 @@ The project provides practical experience in **data preprocessing, statistical a
 
 ---
 
+# 📊 Mutual Fund Investment & Performance Analysis (2019–2024) Using Power BI
+
+## 🎯 Objectives
+* Provide executive‑friendly KPIs for quick decision‑making.
+
+* Visualize scheme category distribution and dominance.
+
+* Track Net AUM growth across years and categories.
+
+* Compare fund mobilization vs redemption across scheme types.
+
+* Explore investor participation trends (folios growth).
+
+* Study relationships between folios, AUM, and fund flows.
+
+# 📂 Dataset Information
+Attribute	Details
+Source	AMFI Public Dataset
+Period	2019–2024
+Records	3,115
+Attributes	15
+Environment	Power BI Desktop
+
+
+# 🛠️ Dashboard Features
+-> KPI Cards → Total Records, Avg Net AUM, Total Net AUM, Average Folios, Average Fund Mobilized.
+
+-> Category Analysis → Bar chart of scheme counts, treemap of Net AUM by category & year.
+
+-> Trend Analysis → Line chart of folios growth (2019–2024), Net AUM trends.
+
+-> Fund Flow Analysis → Bar chart of mobilization vs redemption by scheme type.
+
+-> Correlation Analysis → Scatter plot of folios vs Net AUM, colored by flow status.
+
+# 📈 Insights
+* Equity schemes dominate Net AUM growth, followed by Debt and Hybrid.
+
+* Open Ended schemes drive most mobilization, while Close/Interval remain minor.
+
+* Investor folios doubled between 2019 and 2024, showing strong participation.
+
+* Net inflow/outflow patterns reveal liquidity cycles, with sharp outflows in certain years.
+
+* Correlation: Higher folios generally lead to higher AUM, but institutional schemes achieve large AUM with fewer folios.
+
+# 🎯 Outcome
+The Power BI dashboard provides a clear, interactive view of mutual fund performance, aligning with the Python analysis but tailored for business storytelling. It enables mentors and stakeholders to quickly grasp totals, trends, and category dominance.
+
 ## 👩‍💻 Author
 
 **Kanimozhi G**
