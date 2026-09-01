@@ -863,6 +863,6 @@ The Power BI dashboard provides a clear, interactive view of mutual fund perform
 
 ### Skills Demonstrated
 
-`Python` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `EDA` · `Data Cleaning` · `Feature Engineering` · `Statistical Analysis` · `Data Visualization` · `Business Analysis`
+`Python` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `EDA` · `Data Cleaning` · `Feature Engineering` · `Statistical Analysis` · `Data Visualization` · `Business Analysis` · `Power bi` · `DAX` · `Dashboard`
 
 ---
