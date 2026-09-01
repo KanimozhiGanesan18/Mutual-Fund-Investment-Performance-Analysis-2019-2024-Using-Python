@@ -837,7 +837,24 @@ The project provides practical experience in **data preprocessing, statistical a
 
 ---
 
+## 🗂️ Data Modeling
+
+* Fact Table: Mutual Fund dataset (Net AUM, Folios, Mobilization, Redemption, Flow Status).
+
+* Dimension Table: DateTable (2019–2024, with Year, Month, Quarter, Weekday).
+
+* Relationships: dataset[date] → DateTable[Date] (one‑to‑many).
+
+<img width="1373" height="462" alt="Screenshot 2026-09-01 215258" src="https://github.com/user-attachments/assets/bafbdbd4-ccf5-4fa8-89df-843de37233d5" />
+
+--- 
+
+## 📊 Dashboard
+
+<img width="1396" height="790" alt="Screenshot 2026-09-01 144724" src="https://github.com/user-attachments/assets/5eab6746-838e-473c-bfec-27d71e0dcea4" />
+
 ## 🛠️ Dashboard Features
+
 -> KPI Cards → Total Records, Avg Net AUM, Total Net AUM, Average Folios, Average Fund Mobilized.
 
 -> Category Analysis → Bar chart of scheme counts, treemap of Net AUM by category & year.
