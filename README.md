@@ -823,6 +823,10 @@ The project provides practical experience in **data preprocessing, statistical a
 
 * Study relationships between folios, AUM, and fund flows.
 
+---
+
+## 📂 Dataset Information
+
 | Attribute | Details |
 | --- | --- |
 | **Source** | AMFI Public Dataset |
@@ -831,8 +835,9 @@ The project provides practical experience in **data preprocessing, statistical a
 | **Attributes** | 15 |
 | **Environment** | Power BI Desktop |
 
+---
 
-# 🛠️ Dashboard Features
+## 🛠️ Dashboard Features
 -> KPI Cards → Total Records, Avg Net AUM, Total Net AUM, Average Folios, Average Fund Mobilized.
 
 -> Category Analysis → Bar chart of scheme counts, treemap of Net AUM by category & year.
@@ -843,7 +848,9 @@ The project provides practical experience in **data preprocessing, statistical a
 
 -> Correlation Analysis → Scatter plot of folios vs Net AUM, colored by flow status.
 
-# 📈 Insights
+---
+
+## 📈 Insights
 * Equity schemes dominate Net AUM growth, followed by Debt and Hybrid.
 
 * Open Ended schemes drive most mobilization, while Close/Interval remain minor.
@@ -854,8 +861,10 @@ The project provides practical experience in **data preprocessing, statistical a
 
 * Correlation: Higher folios generally lead to higher AUM, but institutional schemes achieve large AUM with fewer folios.
 
-# 🎯 Outcome
+## 🎯 Outcome
 The Power BI dashboard provides a clear, interactive view of mutual fund performance, aligning with the Python analysis but tailored for business storytelling. It enables mentors and stakeholders to quickly grasp totals, trends, and category dominance.
+
+---
 
 ## 👩‍💻 Author
 
