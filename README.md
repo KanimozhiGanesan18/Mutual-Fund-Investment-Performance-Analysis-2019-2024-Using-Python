@@ -823,13 +823,13 @@ The project provides practical experience in **data preprocessing, statistical a
 
 * Study relationships between folios, AUM, and fund flows.
 
-# 📂 Dataset Information
-Attribute	Details
-Source	AMFI Public Dataset
-Period	2019–2024
-Records	3,115
-Attributes	15
-Environment	Power BI Desktop
+# | Attribute | Details |
+| --- | --- |
+| **Source** | AMFI Public Dataset |
+| **Period** | 2019–2024 |
+| **Records** | 3,115 |
+| **Attributes** | 15 |
+| **Environment** | Power BI Desktop |
 
 
 # 🛠️ Dashboard Features
