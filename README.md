@@ -823,7 +823,7 @@ The project provides practical experience in **data preprocessing, statistical a
 
 * Study relationships between folios, AUM, and fund flows.
 
-# | Attribute | Details |
+| Attribute | Details |
 | --- | --- |
 | **Source** | AMFI Public Dataset |
 | **Period** | 2019–2024 |
