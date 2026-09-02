@@ -878,6 +878,34 @@ The project provides practical experience in **data preprocessing, statistical a
 
 * Correlation: Higher folios generally lead to higher AUM, but institutional schemes achieve large AUM with fewer folios.
 
+---
+
+# 💡 3. Recommendations & Suggestions
+
+Your recommendations should be connected directly to your objectives and findings.
+
+### Recommendation 1 — Focus on Growing Categories
+
+“Since Growth/Equity Schemes show strong AUM growth, mutual fund organizations can analyze the factors driving this growth and use those insights for future investment strategies.”
+
+### Recommendation 2 — Improve Investor Participation
+
+“Since investor participation increased from 2019 to 2024, organizations can continue investor-awareness and financial-literacy initiatives to attract more investors.”
+
+ ### Recommendation 3 — Category-Based Strategies
+
+“Different scheme categories show different investment patterns. Therefore, fund managers can develop category-specific strategies instead of using the same approach for all schemes.”
+
+### Recommendation 4 — Monitor Large Transactions
+
+“Because fund mobilization and redemption contain extreme values, large transactions should be monitored separately to understand their impact on overall fund-flow trends.”
+
+### Recommendation 5 — Use Multiple Statistical Measures
+
+“Since several variables are highly skewed, organizations should consider median values and distribution patterns along with mean values when evaluating performance.”
+
+---
+
 ## 🎯 Outcome
 The Power BI dashboard provides a clear, interactive view of mutual fund performance, aligning with the Python analysis but tailored for business storytelling. It enables mentors and stakeholders to quickly grasp totals, trends, and category dominance.
 
